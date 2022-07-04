@@ -1,0 +1,22 @@
+.menu {
+    display: flex;
+    align-content: space-around;
+    list-style: none;
+}
+
+li {
+    font-size: 15px;
+    margin: 20px;
+    text-align: center;
+    line-height: 24px;
+}
+li:hover {
+    font-weight: 900;
+}
+
+.active {
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: 900;
+
+}

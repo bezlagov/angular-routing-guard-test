@@ -1,0 +1,15 @@
+<div class="filter">
+    <div>
+        <div>All Red Green Blue</div>
+        <div> <input type="radio" name="color" [(ngModel)]="filterService.deviceColor" [value]=""
+                (ngModelChange)="select()" />
+            <input type="radio" *ngFor="let item of colors; let i=index;" name="color" [value]="item"
+                [(ngModel)]="filterService.deviceColor" (ngModelChange)="select()" [checked]="true" />
+        </div>
+    </div>
+
+    <label>
+        Premium
+        <input type="checkbox" (change)="select()" [(ngModel)]="filterService.isPremium">
+    </label>
+</div>
